@@ -8,4 +8,4 @@ Travailler à plusieur avec Git:
   - en moment de commit penser à mettre une déscription.
 
 3)
-La pipeline de CI devrait permettre l'intégration  d'une nouvelle fonctionnalité sans empéché le dévellopement d'une nouvelle.
+La pipeline de CI devrait permettre l'intégration  d'une nouvelle fonctionnalité sans empéché le développement d'une nouvelle.
