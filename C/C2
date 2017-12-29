@@ -1,0 +1,9 @@
+1)
+Pour lancer des déploiements depuis une pipeline CI nous utiliserions AWS avec Jenkins qui utilise un référentiel Github.
+
+2)
+Nous utiliserions AWS pour le continuous Deployment sur plusieurs environnements dans le bute de tester un maximum de cas posibles.
+Ces cas representent les problèmes que pourraient rencontrer les futurs utilisateurs.
+
+3)
+Pour contrôler ce qui est déployé en production en pré-production ou en développement il faut utiliser des pipelines de livraison.

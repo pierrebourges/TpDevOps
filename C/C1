@@ -1,0 +1,11 @@
+1)
+
+2)
+Travailler à plusieur avec Git:
+  - cloner le projet chez tous les membres du groupe.
+  - créer une branche pour chaque membre afin d'éviter les conflits.
+  - de temps en temps récuperer l'ensemble du travaille de chaqu'un sur la branche prinipale.
+  - en moment de commit penser à mettre une déscription.
+
+3)
+La pipeline de CI devrait permettre l'intégration  d'une nouvelle fonctionnalité sans empéché le développement d'une nouvelle.
