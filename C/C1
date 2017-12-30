@@ -1,4 +1,8 @@
 1)
+Pour améliorer le code déjà existant:
+  - Vérifier le respect des conventions de nommage.
+  - Eviter les répétitions d'instructions en factorisant les bouts de programme en une fonction.
+  - Tester l'efficacité du code afin de pouvoir l'optimiser pour qu'il puisse répondre plus rapidement
 
 2)
 Travailler à plusieur avec Git:
