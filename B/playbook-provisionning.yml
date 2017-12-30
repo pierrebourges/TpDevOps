@@ -1,0 +1,8 @@
+---
+
+  - name: install Mongo
+    remote_user: ubuntu
+    roles:
+      - greendayonfire.mongodb
+    hosts: mongo
+    become: true
