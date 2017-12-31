@@ -3,7 +3,7 @@ Pour lancer des déploiements depuis une pipeline CI nous utiliserions AWS avec 
 
 2)
 Nous utiliserions AWS CodeDeploy pour le continuous Deployment sur plusieurs environnements dans le bute de tester un maximum de cas 
-posibles. Ces cas representent les problèmes que pourraient rencontrer les futurs utilisateurs. Ce service AWS automatise le déploiement
+possibles. Ces cas représentent les problèmes que pourraient rencontrer les futurs utilisateurs. Ce service AWS automatise le déploiement 
 d'applications avec des référentiels Github.
 
 3)
