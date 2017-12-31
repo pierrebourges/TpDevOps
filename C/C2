@@ -7,4 +7,4 @@ possibles. Ces cas représentent les problèmes que pourraient rencontrer les fu
 d'applications avec des référentiels Github.
 
 3)
-Pour contrôler ce qui est déployé en production en pré-production ou en développement il faut utiliser des pipelines de livraison.
+Pour contrôler ce qui est déployé en production, en pré-production ou en développement il faut utiliser des pipelines de livraison.
