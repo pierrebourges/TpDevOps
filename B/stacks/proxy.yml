@@ -1,0 +1,65 @@
+version: '2'
+
+services:
+  hello:
+    image: dockercloud/hello-world
+    deploy: 
+      replicas: 4
+      update_config:
+        parallelism: 1
+      delay: 5s
+      resources:
+        limits:
+          cpus: "0.02"
+            memory: 60M
+      reservations:
+        cpus: "0.01"
+        memory: 40M
+      restart_policy:
+        condition: on-failure
+      delay: 5s
+      max_attempts: 4
+    placement:
+    preferences:
+    - spread: node.labels.location
+    environment:
+    - SERVICE_PORT=80
+    - VIRTUAL_HOST=http://hello.homecolis.zkx
+    networks:
+      -  proxy
+
+  haproxy:
+    image: dockercloud/haproxy
+    deploy:
+      mode: global
+      update_config:
+        parallelism: 1
+        delay: 10s
+      resources:
+        limits:
+        cpus: "0.1"
+        memory: 64M
+      reservations:
+       cpus: '0.05'
+       memory: 20M
+      restart_policy:
+      condition: on-failure
+      placement:
+      constraints:
+      - "loadbalanced=true"
+  ports:
+    - target: 80
+    published: 80
+    protocol: tcp
+    mode: host
+    volumes:
+    - '/var/run/docker.sock:/var/run/docker.sock'
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    - RELOAD_TIMEOUT=-1
+    - HEALTH_CHECK=check inter 2000 rise 2 fall 3
+    -  EXTRA_GLOBAL_SETTINGS=spread-checks 5
+  external: true
