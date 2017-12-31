@@ -1,15 +1,15 @@
 1)
-Pour améliorer le code déjà existant:
+Pour améliorer le code déjà existant :
   - Vérifier le respect des conventions de nommage.
-  - Eviter les répétitions d'instructions en factorisant les bouts de programme en une fonction.
+  - Éviter les répétitions d'instructions en factorisant les bouts de programme en une fonction.
   - Tester l'efficacité du code afin de pouvoir l'optimiser pour qu'il puisse répondre plus rapidement
 
 2)
-Travailler à plusieur avec Git:
-  - cloner le projet chez tous les membres du groupe.
-  - créer une branche pour chaque membre afin d'éviter les conflits.
-  - de temps en temps récuperer l'ensemble du travaille de chaqu'un sur la branche prinipale.
-  - en moment de commit penser à mettre une déscription.
+Travailler à plusieurs avec Git :
+  - Cloner le projet chez tous les membres du groupe.
+  - Créer une branche pour chaque membre afin d'éviter les conflits.
+  - De temps en temps récupérer l'ensemble du travail de chacun sur la branche principale.
+  - Au moment de commit penser à mettre une description.
 
 3)
-La pipeline de CI devrait permettre l'intégration  d'une nouvelle fonctionnalité sans empéché le développement d'une nouvelle.
+La pipeline de CI devrait permettre l'intégration  d'une nouvelle fonctionnalité sans empécher le développement d'une nouvelle.
